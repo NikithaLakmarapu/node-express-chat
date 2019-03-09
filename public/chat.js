@@ -39,6 +39,7 @@ function makeid() {
 function submitfunction() {
   let from = $('#user').val()
   const message = $('#m').val()
+  
   if (message !== '') {
     socket.emit('chatMessage', from, message)
   }

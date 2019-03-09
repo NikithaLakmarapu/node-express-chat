@@ -14,11 +14,10 @@
   <ul id="messages"></ul>
 
   <div id="notifyUser"></div>
-
-   <form action="msg.html">
+<form id="chatform" onsubmit="return(false)">
    <input type="hidden" id="user" value="" />
-  
-    <input type="email" id="m"autocomplete="off" placeholder="Type your mail here.."  value="" />
+   
+    <input type="text" id="m"autocomplete="off" placeholder="Type your msg here.."  value="" />
     <br><input
       type="submit" id="button" value="Send" />
   </form>

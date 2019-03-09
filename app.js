@@ -11,11 +11,11 @@ const port = 3003;
 // By default, Express does not serve static files. 
 // Configure middleware with app.use
 // use '/public to access files in the 'public' folder
-app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use( express.static(path.join(__dirname, './public')));
 
 // on a GET request to default page, serve up html
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, './public/index.html'))
+  res.sendFile(path.join(__dirname, 'index.html'))
 })
 
 // on a connection event, act as follows (socket interacts with client)
